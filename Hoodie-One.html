@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title> Charged Clothes </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Leron">
+    <meta name="keywords" content="Shop, Clothes, Everything">
+    <meta name="description" content="">
+
+    <link rel="icon" type="image/png" href="ICO.ico">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake-slow.min.css">
+</head>
+
+<body>
+
+    <div class="topbar">
+        <center> <a href="home.html"><img src="BarLogo.png" class="topbarlogo"></a></center>
+    </div>
+
+    <div class="productContent">
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <img src="Hoodie_Back.png" class="productImage">
+            </div>
+
+            <div class="mySlides">
+                <img src="Hoodie_Front.png" class="productImage">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
+        <div class="productTextBox">
+            <p class="productText">
+                Hoodie One!
+            </p>
+            <p class="productText">
+                The number one version!
+            </p>
+            <p class="priceText shake-slow shake-constant shake-constant--hover">
+                $49
+            </p>
+
+            <input class=productButton type="button" value="Buy Now!" onclick="Buynow()">
+            <br><br><br><br>
+            <table class="productTable">
+                <tr>
+                    <td class="productTd">Material</td>
+                    <td class="productTd">Material construction</td>
+                    <td class="productTd">Care instruction</td>
+                </tr>
+                <tr>
+                    <td class="productTd">50% Polyester, 50% Cotton</td>
+                    <td class="productTd">Tracksuit</td>
+                    <td class="productTd">Do not tumble dry, Machine wash at 30°C</td>
+                </tr>
+            </table>
+
+        </div>
+
+
+    </div>
+
+    <script src="Slideshow_Script.js"></script>
+    <script src="Alert_Script.js"></script>
+
+</body>
+
+</html>

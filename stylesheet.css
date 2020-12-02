@@ -1,0 +1,259 @@
+/* Fonty */
+@font-face {
+    font-family: 'Major Mono Display';
+    src: url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap')
+}
+@font-face {
+    font-family: 'Permanent Marker', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family:'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+}
+/* Fonty */
+
+body {
+    margin: 0;
+    background-image: url("Background.png");
+}
+
+
+
+
+/* SideNavBar */
+.sidenav {
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(6, 230, 36));
+    overflow-x: hidden;
+    user-select: none;
+}
+  
+.sidenav a {
+    color: white;
+    padding: 16px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 32px;
+    margin-left: 8px;
+    text-decoration: none;
+    display: block;
+}
+  
+.sidenav a:hover {
+    background-image: linear-gradient(to left, rgba(255,0,0,0),rgb(6, 230, 36));
+    color: white;
+}
+.sidenavLogo {
+    width: 200px;
+    height: 200px;
+    margin-left: 15px;
+}
+/* SideNavBar */
+
+.content {
+    margin-top: 50px;
+    margin-left: 260px;
+    padding-left: 20px;
+}
+.sites {
+    margin-top: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+
+/* Home */
+.HomeText {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    color: white;
+    user-select: none;
+    text-align: center;
+}
+.HomeTextG {
+    color: rgb(6, 230, 36);
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    user-select: none;
+    text-align: center;
+}
+
+/* Home */
+
+
+/* Flex-Containers */
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 80px;
+}
+.flex-item {
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+.card {
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    user-select: none;
+    box-shadow: 0 0 5px #fff, 0 0 10px black, 0 0 15px rgb(6, 230, 36), 0 0 20px rgb(6, 230, 36);
+}
+.card:hover { scale: 1.02; }
+.price:hover { scale: 1.02; }
+
+.price {
+    color: rgb(6, 230, 36);
+    font-size: 25px;
+}
+.description {
+    font-size: 18px;
+}
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background: linear-gradient(to bottom, rgba(255,0,0,0),rgb(6, 230, 36));
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+/* Flex-Containers */
+
+/* Loading... */
+.mySlides {display: none;}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+/* Loading... */
+
+/* Products */
+.topbar {
+    height: 140px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(6, 230, 36));
+    overflow-x: hidden;
+    user-select: none;
+}
+.topbarlogo {
+    height: 120px;
+    width: 210px;
+}
+.productContent {
+    margin-top: 220px;
+}
+.productImage {
+    width: 500px;
+    height: 500px;
+}
+.productText {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: white;
+    user-select: none;
+}
+.priceText {
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    color: rgb(6, 230, 36);
+    user-select: none;
+}
+.productTextBox {
+    float: right;
+    margin-right: 20%;
+}
+.productButton {
+    padding: 16px;
+    color: white;
+    background: linear-gradient(to bottom, rgba(255,0,0,0),rgb(6, 230, 36));
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    font-size: 22px;
+    font-weight: 600;
+    box-shadow: 0 0 5px #fff, 0 0 10px black, 0 0 15px rgb(6, 230, 36), 0 0 20px rgb(6, 230, 36);    
+}
+.productTable {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: white;
+    user-select: none;
+    padding: 8px;
+    border: 2px solid white;
+    background: linear-gradient(to bottom, rgba(255,0,0,0),rgb(6, 230, 36));
+    box-shadow: 0 0 5px #fff, 0 0 10px black, 0 0 15px rgb(6, 230, 36), 0 0 20px rgb(6, 230, 36);
+}
+.productTd {
+    padding: 8px;
+    border: 2px solid white;
+}
+
+/* Products */
+
+
+
+/* Slideshow */
+/* Slideshow */
+.slideshow-container {
+    width: 500px;
+    height: 500px;
+    float: left;
+    margin-left: 8%;
+    box-shadow: 0 0 5px #fff, 0 0 10px black, 0 0 15px rgb(6, 230, 36), 0 0 20px rgb(6, 230, 36);
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: relative;
+    padding: 16px;
+    color: grey;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 6px;
+    user-select: none;
+    display: inline-block;
+    margin-left: 125px;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgb(6, 230, 36);
+}
+
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+/* Slideshow */
+/* Slideshow */
